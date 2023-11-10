@@ -1,0 +1,10 @@
+{
+  "spaceId": "sk06751ix81h",
+  "exportDir": "./src/data/contentful/export",
+  "errorLogFile": "./src/data/contentful/export/error.log",
+  "saveFile": true,
+  "contentFile": "export.content-types.json",
+  "skipContent": true,
+  "skipRoles": true,
+  "skipWebhooks": true
+}
