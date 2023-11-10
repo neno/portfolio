@@ -1,20 +1,28 @@
-const project = {
+import {defineField, defineType} from "sanity";
+
+export default defineType({
   name: "project",
   title: "Projects",
   type: "document",
   fields: [
-    {
+    defineField({
       name: "name",
       title: "Name",
       type: "string",
-    },
-    {
+    }),
+    defineField({
       name: "slug",
       title: "Slug",
       type: "slug",
       options: { source: "name" }
-    },
-    {
+    }),
+    defineField({
+      name: "skills",
+      title: "Skills",
+      type: "array",
+      of: [{ type: "tag" }]
+    }),
+    defineField({
       name: "image",
       title: "Image",
       type: "image",
@@ -26,19 +34,16 @@ const project = {
           type: "string"
         }
       ]
-    },
-    {
+    }),
+    defineField({
       name: "url",
       title: "URL",
       type: "url"
-    },
-    {
-      name: "content",
-      title: "Content",
-      type: "array",
-      of: [{ type: "block" }]
-    }
+    }),
+    defineField({
+      name: "contents",
+      title: "Contents",
+      type: "blockContent",
+    })
   ]
-}
-
-export default project;
+})
