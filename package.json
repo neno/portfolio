@@ -8,9 +8,12 @@
     "start": "next start",
     "lint": "next lint",
     "export:schema": "contentful space export --config ./src/data/contentful/export/config.json",
-    "import:schema": "contentful space import --config ./src/data/contentful/import/config.json"
+    "import:schema": "contentful space import --config ./src/data/contentful/import/config.json",
+    "export:credentials": "export $(cat .env.local | awk '!/^\\s*#/' | awk '!/^\\s*$/')",
+    "export:ts-types": "pnpm export:credentials && cf-content-types-generator --spaceId $CONTENTFUL_SPACE_ID --token $CONTENTFUL_MANAGEMENT_TOKEN -o src/contentful/types -X && prettier --write src/contentful/types"
   },
   "dependencies": {
+    "contentful": "^10.6.7",
     "geist": "^1.1.0",
     "next": "14.0.2",
     "react": "^18",
@@ -21,6 +24,7 @@
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "autoprefixer": "^10.0.1",
+    "cf-content-types-generator": "^2.12.9",
     "eslint": "^8",
     "eslint-config-next": "14.0.2",
     "postcss": "^8",
