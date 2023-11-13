@@ -629,7 +629,7 @@
         "id": "experience",
         "type": "ContentType",
         "createdAt": "2023-11-10T15:24:49.429Z",
-        "updatedAt": "2023-11-10T15:43:39.688Z",
+        "updatedAt": "2023-11-13T11:08:28.232Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -637,8 +637,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 7,
-        "publishedAt": "2023-11-10T15:43:39.688Z",
+        "publishedVersion": 9,
+        "publishedAt": "2023-11-13T11:08:28.232Z",
         "firstPublishedAt": "2023-11-10T15:24:49.844Z",
         "createdBy": {
           "sys": {
@@ -654,8 +654,8 @@
             "id": "5FCBnizfyz2uYYMU2FFDki"
           }
         },
-        "publishedCounter": 4,
-        "version": 8,
+        "publishedCounter": 5,
+        "version": 10,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -698,7 +698,7 @@
           "name": "Client",
           "type": "Link",
           "localized": false,
-          "required": true,
+          "required": false,
           "validations": [
             {
               "linkContentType": [
@@ -1249,7 +1249,7 @@
             "linkType": "Space"
           }
         },
-        "version": 8,
+        "version": 10,
         "createdAt": "2023-11-10T15:24:49.995Z",
         "createdBy": {
           "sys": {
@@ -1258,7 +1258,7 @@
             "linkType": "User"
           }
         },
-        "updatedAt": "2023-11-10T15:43:40.661Z",
+        "updatedAt": "2023-11-13T11:08:28.991Z",
         "updatedBy": {
           "sys": {
             "id": "5FCBnizfyz2uYYMU2FFDki",

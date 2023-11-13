@@ -7,12 +7,13 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "export:schema": "contentful space export --config ./src/data/contentful/export/config.json",
-    "import:schema": "contentful space import --config ./src/data/contentful/import/config.json",
     "export:credentials": "export $(cat .env.local | awk '!/^\\s*#/' | awk '!/^\\s*$/')",
+    "export:schema": "pnpm export:credentials && contentful space export --config ./src/lib/contentful/export/config.json",
+    "import:schema": "pnpm export:credentials && contentful space import --config ./src/lib/contentful/import/config.json",
     "export:ts-types": "pnpm export:credentials && cf-content-types-generator --spaceId $CONTENTFUL_SPACE_ID --token $CONTENTFUL_MANAGEMENT_TOKEN -o src/contentful/types -X && prettier --write src/contentful/types"
   },
   "dependencies": {
+    "@contentful/rich-text-react-renderer": "^15.19.0",
     "contentful": "^10.6.7",
     "geist": "^1.1.0",
     "next": "14.0.2",
@@ -20,6 +21,7 @@
     "react-dom": "^18"
   },
   "devDependencies": {
+    "@contentful/rich-text-types": "^16.3.0",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
