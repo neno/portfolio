@@ -14,12 +14,30 @@ const config: Config = {
       secondary: '#d51e2d'
     },
     fontSize: {
-      '5xl': fluid(24, 58),
-      '4xl': fluid(24, 42),
-      '3xl': fluid(24, 42),
-      '2xl': fluid(24, 42),
-      'xl': fluid(17, 22),
-      base: fluid(16, 20),
+      '5xl': [
+        fluid(32, 58),
+        "1.1"
+      ],
+      '4xl': [
+        fluid(28, 42),
+        "1.1"
+      ],
+      '3xl': [
+        fluid(24, 34),
+        "1.2"
+      ],
+      '2xl': [
+        fluid(20, 28),
+        "1.4"
+      ],
+      'xl': [
+        fluid(17, 22),
+        "1.4"
+      ],
+      base: [
+        fluid(16, 20),
+        "1.5"
+      ],
     },
     extend: {
       backgroundImage: {
