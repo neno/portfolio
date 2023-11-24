@@ -1,4 +1,5 @@
 import type { Config } from 'tailwindcss'
+const {fluid} = require("./src/utils");
 
 const config: Config = {
   content: [
@@ -7,6 +8,19 @@ const config: Config = {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    colors: {
+      white: '#ffffff',
+      neutral: '#111111',
+      secondary: '#d51e2d'
+    },
+    fontSize: {
+      '5xl': fluid(24, 58),
+      '4xl': fluid(24, 42),
+      '3xl': fluid(24, 42),
+      '2xl': fluid(24, 42),
+      'xl': fluid(17, 22),
+      base: fluid(16, 20),
+    },
     extend: {
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
