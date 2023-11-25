@@ -5,13 +5,10 @@ import type {
   EntrySkeletonType,
   LocaleCode,
 } from "contentful";
-import type { TypeSectionSkeleton } from "./TypeSection";
 
 export interface TypeLinkFields {
   title: EntryFieldTypes.Symbol;
-  section?: EntryFieldTypes.EntryLink<TypeSectionSkeleton>;
-  externalUrl?: EntryFieldTypes.Symbol;
-  asset?: EntryFieldTypes.AssetLink;
+  url: EntryFieldTypes.Symbol;
 }
 
 export type TypeLinkSkeleton = EntrySkeletonType<TypeLinkFields, "link">;

@@ -9,6 +9,9 @@ import type {
 export interface TypeCollectionFields {
   name: EntryFieldTypes.Symbol;
   items: EntryFieldTypes.Array<EntryFieldTypes.EntryLink<EntrySkeletonType>>;
+  wrappingTag?: EntryFieldTypes.Array<
+    EntryFieldTypes.Symbol<"div" | "fragment" | "ol" | "ul">
+  >;
 }
 
 export type TypeCollectionSkeleton = EntrySkeletonType<

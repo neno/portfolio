@@ -6,19 +6,16 @@ import type {
   LocaleCode,
 } from "contentful";
 import type { TypeClientSkeleton } from "./TypeClient";
-import type { TypeTagsSkeleton } from "./TypeTags";
 
 export interface TypeExperienceFields {
   isAProject?: EntryFieldTypes.Boolean;
   title: EntryFieldTypes.Symbol;
-  client: EntryFieldTypes.EntryLink<TypeClientSkeleton>;
-  link?: EntryFieldTypes.Symbol;
+  client?: EntryFieldTypes.EntryLink<TypeClientSkeleton>;
   fromTo: EntryFieldTypes.Symbol;
   role?: EntryFieldTypes.Symbol;
   description?: EntryFieldTypes.Text;
-  skillsUsed?: EntryFieldTypes.Array<
-    EntryFieldTypes.EntryLink<TypeTagsSkeleton>
-  >;
+  skillsUsed: EntryFieldTypes.Array<EntryFieldTypes.Symbol>;
+  link?: EntryFieldTypes.Symbol;
   thumbnail?: EntryFieldTypes.AssetLink;
 }
 
