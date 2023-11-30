@@ -14,6 +14,9 @@ export interface TypeSectionFields {
   contents?: EntryFieldTypes.Array<
     EntryFieldTypes.EntryLink<EntrySkeletonType>
   >;
+  sectionTag?: EntryFieldTypes.Symbol<
+    "aside" | "footer" | "header" | "nav" | "section"
+  >;
 }
 
 export type TypeSectionSkeleton = EntrySkeletonType<

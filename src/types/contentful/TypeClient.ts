@@ -9,6 +9,8 @@ import type {
 export interface TypeClientFields {
   name: EntryFieldTypes.Symbol;
   link?: EntryFieldTypes.Symbol;
+  logo?: EntryFieldTypes.AssetLink;
+  summary?: EntryFieldTypes.RichText;
 }
 
 export type TypeClientSkeleton = EntrySkeletonType<TypeClientFields, "client">;

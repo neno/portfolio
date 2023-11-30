@@ -16,6 +16,11 @@ export type {
 export type { TypeLink, TypeLinkFields, TypeLinkSkeleton } from "./TypeLink";
 export type { TypePage, TypePageFields, TypePageSkeleton } from "./TypePage";
 export type {
+  TypePerson,
+  TypePersonFields,
+  TypePersonSkeleton,
+} from "./TypePerson";
+export type {
   TypeRichText,
   TypeRichTextFields,
   TypeRichTextSkeleton,
