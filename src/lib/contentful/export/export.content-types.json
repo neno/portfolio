@@ -292,7 +292,7 @@
         "id": "link",
         "type": "ContentType",
         "createdAt": "2023-11-05T19:17:19.231Z",
-        "updatedAt": "2023-11-20T11:06:48.675Z",
+        "updatedAt": "2023-11-22T14:06:06.587Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -300,8 +300,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 9,
-        "publishedAt": "2023-11-20T11:06:48.675Z",
+        "publishedVersion": 13,
+        "publishedAt": "2023-11-22T14:06:06.587Z",
         "firstPublishedAt": "2023-11-05T19:17:19.674Z",
         "createdBy": {
           "sys": {
@@ -317,8 +317,8 @@
             "id": "5FCBnizfyz2uYYMU2FFDki"
           }
         },
-        "publishedCounter": 5,
-        "version": 10,
+        "publishedCounter": 7,
+        "version": 14,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -361,22 +361,6 @@
           ],
           "disabled": false,
           "omitted": false
-        },
-        {
-          "id": "platform",
-          "name": "Platform",
-          "type": "Array",
-          "localized": false,
-          "required": false,
-          "validations": [
-          ],
-          "disabled": false,
-          "omitted": false,
-          "items": {
-            "type": "Symbol",
-            "validations": [
-            ]
-          }
         }
       ]
     },
@@ -392,7 +376,7 @@
         "id": "collection",
         "type": "ContentType",
         "createdAt": "2023-11-05T19:45:20.670Z",
-        "updatedAt": "2023-11-20T09:26:39.111Z",
+        "updatedAt": "2023-11-20T16:30:11.888Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -400,8 +384,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 5,
-        "publishedAt": "2023-11-20T09:26:39.111Z",
+        "publishedVersion": 9,
+        "publishedAt": "2023-11-20T16:30:11.888Z",
         "firstPublishedAt": "2023-11-05T19:45:21.108Z",
         "createdBy": {
           "sys": {
@@ -417,8 +401,8 @@
             "id": "5FCBnizfyz2uYYMU2FFDki"
           }
         },
-        "publishedCounter": 3,
-        "version": 6,
+        "publishedCounter": 5,
+        "version": 10,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -479,11 +463,10 @@
             "validations": [
               {
                 "in": [
-                  "nav",
                   "ul",
                   "ol",
-                  "section",
-                  "fragment"
+                  "fragment",
+                  "div"
                 ]
               }
             ]
@@ -669,7 +652,7 @@
         "id": "experience",
         "type": "ContentType",
         "createdAt": "2023-11-10T15:24:49.429Z",
-        "updatedAt": "2023-11-13T11:08:28.232Z",
+        "updatedAt": "2023-11-24T16:19:00.891Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -677,8 +660,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 9,
-        "publishedAt": "2023-11-13T11:08:28.232Z",
+        "publishedVersion": 19,
+        "publishedAt": "2023-11-24T16:19:00.891Z",
         "firstPublishedAt": "2023-11-10T15:24:49.844Z",
         "createdBy": {
           "sys": {
@@ -694,8 +677,8 @@
             "id": "5FCBnizfyz2uYYMU2FFDki"
           }
         },
-        "publishedCounter": 5,
-        "version": 10,
+        "publishedCounter": 10,
+        "version": 20,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -751,17 +734,6 @@
           "linkType": "Entry"
         },
         {
-          "id": "link",
-          "name": "Link",
-          "type": "Symbol",
-          "localized": false,
-          "required": false,
-          "validations": [
-          ],
-          "disabled": false,
-          "omitted": false
-        },
-        {
           "id": "fromTo",
           "name": "From - To",
           "type": "Symbol",
@@ -799,22 +771,27 @@
           "name": "Skills used",
           "type": "Array",
           "localized": false,
-          "required": false,
+          "required": true,
           "validations": [
           ],
           "disabled": false,
           "omitted": false,
           "items": {
-            "type": "Link",
+            "type": "Symbol",
             "validations": [
-              {
-                "linkContentType": [
-                  "tags"
-                ]
-              }
-            ],
-            "linkType": "Entry"
+            ]
           }
+        },
+        {
+          "id": "link",
+          "name": "Link",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
         },
         {
           "id": "thumbnail",
@@ -1239,7 +1216,7 @@
             "linkType": "Space"
           }
         },
-        "version": 10,
+        "version": 14,
         "createdAt": "2023-11-05T19:17:19.839Z",
         "createdBy": {
           "sys": {
@@ -1248,7 +1225,7 @@
             "linkType": "User"
           }
         },
-        "updatedAt": "2023-11-20T11:06:49.413Z",
+        "updatedAt": "2023-11-22T14:06:07.367Z",
         "updatedBy": {
           "sys": {
             "id": "5FCBnizfyz2uYYMU2FFDki",
@@ -1281,11 +1258,6 @@
           "fieldId": "url",
           "widgetId": "urlEditor",
           "widgetNamespace": "builtin"
-        },
-        {
-          "fieldId": "platform",
-          "widgetId": "tagEditor",
-          "widgetNamespace": "builtin"
         }
       ]
     },
@@ -1300,7 +1272,7 @@
             "linkType": "Space"
           }
         },
-        "version": 6,
+        "version": 10,
         "createdAt": "2023-11-05T19:45:21.241Z",
         "createdBy": {
           "sys": {
@@ -1309,7 +1281,7 @@
             "linkType": "User"
           }
         },
-        "updatedAt": "2023-11-20T09:26:39.897Z",
+        "updatedAt": "2023-11-20T16:30:12.620Z",
         "updatedBy": {
           "sys": {
             "id": "5FCBnizfyz2uYYMU2FFDki",
@@ -1473,7 +1445,7 @@
             "linkType": "Space"
           }
         },
-        "version": 10,
+        "version": 20,
         "createdAt": "2023-11-10T15:24:49.995Z",
         "createdBy": {
           "sys": {
@@ -1482,7 +1454,7 @@
             "linkType": "User"
           }
         },
-        "updatedAt": "2023-11-13T11:08:28.991Z",
+        "updatedAt": "2023-11-24T16:19:01.708Z",
         "updatedBy": {
           "sys": {
             "id": "5FCBnizfyz2uYYMU2FFDki",
@@ -1522,11 +1494,6 @@
           "widgetNamespace": "builtin"
         },
         {
-          "fieldId": "link",
-          "widgetId": "urlEditor",
-          "widgetNamespace": "builtin"
-        },
-        {
           "fieldId": "fromTo",
           "settings": {
             "helpText": "2018 — Present, July — Dec 2017, 2017 — 2018"
@@ -1546,7 +1513,12 @@
         },
         {
           "fieldId": "skillsUsed",
-          "widgetId": "entryLinksEditor",
+          "widgetId": "tagEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "link",
+          "widgetId": "urlEditor",
           "widgetNamespace": "builtin"
         },
         {
