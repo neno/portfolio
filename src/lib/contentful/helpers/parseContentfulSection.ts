@@ -94,7 +94,7 @@ export function parseContentfulSection(sectionEntry: SectionEntry | undefined): 
     return;
   }
   const _id = sectionEntry.sys.id;
-  const { slug, name, heading, showHeading, contents } = sectionEntry.fields;
+  const { slug, name, heading, showHeading, contents, sectionTag } = sectionEntry.fields;
 
   let contentCollection: Section['contents'] = [];
   if (contents && Array.isArray(contents) && contents.length > 0) {
@@ -111,6 +111,8 @@ export function parseContentfulSection(sectionEntry: SectionEntry | undefined): 
     heading,
     // @ts-expect-error - convert symbol to string
     showHeading,
+    // @ts-expect-error - convert symbol to string
+    sectionTag,
     contents: contentCollection,
   };
 }

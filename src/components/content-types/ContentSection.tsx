@@ -4,6 +4,8 @@ import { clsxm } from '@/lib/helpers';
 
 export function ContentSection({ content }: { content: Section }) {
   const { slug, heading, contents, showHeading, sectionTag } = content;
+  console.log('content', content);
+
   const SectionTag = sectionTag
     ? (sectionTag as unknown as keyof JSX.IntrinsicElements)
     : 'section';
