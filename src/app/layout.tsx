@@ -18,9 +18,7 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body className={inter.className}>
-        <header>
-          <Section slug='header' />
-        </header>
+        <Section slug='header' />
         <main>{children}</main>
       </body>
     </html>
