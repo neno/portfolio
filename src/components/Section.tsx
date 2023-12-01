@@ -1,4 +1,4 @@
-import { fetchSection } from '../lib/api';
+import { fetchSection } from '@/lib/api';
 import { ContentSection } from './content-types/ContentSection';
 
 type SectionProps = {
